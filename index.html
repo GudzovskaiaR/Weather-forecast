@@ -5,55 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather forecast</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__search">
-          <h1>My Weather</h1>
-          <input type="text" />
+        <div class="header__search search">
+          <div class="search__header"><h1>My Weather</h1></div>
+          <div class="search__input">
+            <input class="input__search" type="text" value="" />
+            <div class="search-img"><img src="img/search.png" alt="" /></div>
+          </div>
         </div>
-        <div class="header__tabs">
-          <div class="today"><p>Today</p></div>
-          <div class="5Day"><p>5-day forecast</p></div>
+        <div class="header__tabs tabs">
+          <div class="tabs__today"><p>Today</p></div>
+          <div class="tabs__five"><p>5-day forecast</p></div>
         </div>
       </header>
-      <main>
-        <div class="currentWeather">
-          <div class="currentWeather__title title">
-            <div class="title__title"><p>current weather</p></div>
-            <div class="title__data"><p>24.01.2023</p></div>
-            <div class="currentWeather__content content">
-              <div class="content__description">
-                <img src="" alt="" />
-                <p></p>
-              </div>
-              <div class="content__temperature">
-                <p>29 C</p>
-                <p>real feel 30C</p>
-              </div>
-              <div class="content__duration">
-                <p>Sunrise:7:04 AM</p>
-                <p>Sunrise:7:04 AM</p>
-                <p>Sunrise:7:04 AM</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hourlyForecast">
-          <div class="hourlyForecast__title title">
-            <div class="title__title"><p>Hourly</p></div>
-          </div>
-          <div class="hourlyForecast__content content">
-            <div class="content__data"></div>
-            <div class="content__hours"></div>
-          </div>
-        </div>
-        <div class="nearbyPlaces">
-          <div class="nearbyPlaces__title"><p>nearby places</p></div>
-          <div class="nearbyPlaces__content"></div>
-        </div>
+      <main class="main">
+        
+        
       </main>
     </div>
     <script src="index.js"></script>
